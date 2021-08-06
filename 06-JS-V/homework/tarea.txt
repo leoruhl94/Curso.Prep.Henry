@@ -1,0 +1,36 @@
+
+prototype:
+
+Es una propiedad de Object, el objeto padre de todos, a su vez tambien es un objeto que contiene todos los metodos y
+propiedades comunes a todos los objetos.
+
+tambien se puede crear un prototipo personalizado para poder compartir metodos entre nuevos objetos creados a partir
+de este nuevo prototipo.
+
+para crear un metodo y guardarlo en el prototipo de un objeto se hace de la siguiente forma
+
+  miObjeto.prototype.miMetodo = function(){
+    contenido de la funcion.
+  }
+
+---------------------------------------
+
+Constructors (de Clases):
+
+las clases son como plantillas para crear objetos.
+
+un constructor es un metodo especial que se usa para crear e inicializar un nuevo objeto de clase.
+
+se usa de la siguiente manera
+
+  class Persona {
+    constructor( nombre, apellido, edad){
+      this.nombre = nombre;
+      this.apellido = apellido;
+      this.edad = edad;
+    }
+  }
+
+lo anterior crea una plantilla para crear objetos del tipo Persona, estos nuevos objetos se crean con la palabra new
+
+  var carlos = new Persona ( 'carlos', 'retamozo', 36); // con esta linea creamos un nuevo objeto de la clase persona, el objeto carlos.

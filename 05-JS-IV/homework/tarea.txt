@@ -1,0 +1,117 @@
+
+Objetos:
+
+los objetos son similares a los arrays, son colecciones de datos sobre una sola cosa salvo que estos en vez de usar un
+indice numerico este define nombres como propiedades para asignarles los valores, a esto se le llama clave:valor .
+
+los objetos se instancian entre llaves {} por ejemplo:
+
+  var objeto = {}; // dentro de las llaves deberian definirse las propiedades en par clave:valor separadas por coma.
+
+ejemplo:
+
+  var objeto = {
+    prop1: true,
+    prop2: 'string'
+  }
+
+---------------------------------
+
+Propiedades:
+
+llamaremos propiedades a las claves del par clave:valor que se definen dentro de un objeto.
+para acceder a una propiedad se escribe el nombre del objeto seguido del nombre de la propiedad separados por un punto.
+
+ejemplo:
+
+  var objeto = {
+    prop1: true,
+    prop2: 'string'
+  }
+
+  objeto.prop1 // con esto accedo al valor de prop1 que es igual a true
+
+para cambiar el valor de una propiedad se trata de la misma forma que una variable normal por ejemplo:
+
+  objeto.prop1 = false;
+
+para añadir una nueva propiedad funciona de forma similar, por ejemplo:
+
+  objeto.nuevaProp = 'esta es la nueva propiedad';
+
+para eliminar una propiedad se usa la palabra delete, por ejemplo:
+
+  delete objeto.prop2; //con esta linea estariamos eliminando la prop2 del objeto.
+
+----------------------------------
+
+Métodos:
+
+los metodos son funciones que creamos dentro de un objeto y las asignamos como valor de una clave.
+se accede a ellos de la misma forma que a las Propiedades.
+
+  var objeto = {
+    prop1: true,
+    prop2: 'string'
+    metodo: function () {
+      codigo que se ejecuta cuando se llama a este metodo.
+    }
+  }
+
+  objeto.metodo; //  de esta forma estariamos ejecutando el metodo.
+
+------------------------------------------
+
+Bucle for…in:
+
+asi como en un array lo recorremos con un bucle for, los objetos los podemos recorrer con un fucle for...in, este recorre
+el objeto pasando por cada par clave:valor.
+
+ejemplo:
+
+  var objeto {
+    clave1: 'valor1',
+    clave2: 'valor2',
+    claveN: 'valorN'
+  }
+
+  for (let clave in objeto){
+    codigo a ejecutar por cada clave que contenga el objeto.
+  }
+
+
+--------------------------------------
+
+Notación de puntos vs notación de corchetes:
+
+hay 2 formas de acceder a una propiedad en un objeto, la notacion de puntos y la notacion de corchetes
+
+la notacion de puntos se usa con el nombre del objeto seguido de . y de la propiedad, ejemplo: objeto.propiedad.
+
+la notacion de corchetes se usa como si fuera un array solo que en vez usar un indice se usa el nombre de la clave en formato de string
+ejemplo: objeto['propiedad']; esta notacion a diferencia de la de punto permite enviar variables entre los corchetes, por ejemplo:
+objeto[variable];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

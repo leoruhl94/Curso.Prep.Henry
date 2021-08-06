@@ -1,0 +1,13 @@
+Arrays:
+
+un array es una coleccion de datos ordenados, estos datos pueden ser de distinto tipo y a ellos se accede a travez de un indice, este indice comienza en 0.
+para crear un array se crea como si fuera una variable salvo que se le asignan los valores entre corchetes [] separados por coma (,).
+ejemplo:
+
+var array = []; // este es un array vacio
+var array2 = ['string1', 'string2', 'string3', 'etc'] // este es un array que contiene strings
+var array3 = ['string1', 2021, null, true, 'etc']  // este array contiene multiples tipos de datos.
+
+si quisiesra acceder por ejemplo al primer elemento del array2 se escribe de el indice entre corchetes por ejemplo array2[0] // el valor seria 'string1'
+si quisiera ver que hay almacenado en la tercer posicion del array2 seria array2[2] // el valor almacenado seria null y si quisiera reemplazarlo por otro
+dato solo basta con asignarle otro valor como una variable cualquiera por ejemplo asignarle el numero 5 >>> array2[2] = 5;

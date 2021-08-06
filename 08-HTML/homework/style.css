@@ -1,0 +1,35 @@
+body{
+  background-image: url("https://image.freepik.com/vector-gratis/fondo-onda-blanca-suave_52683-55288.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+body div:nth-child(2) {
+  flex-direction: row;
+  justify-content: center;
+}
+
+h1 {
+  color: #555555;
+}
+img {
+  width: 400px;
+}
+#thirdDiv {
+  height: 600px;
+  width: 500px;
+  background-color: darkgray;
+  padding: 50px;
+  border: 3px double silver;
+}
+#spanId {
+  font-size: 18px;
+  margin: 50px;
+}

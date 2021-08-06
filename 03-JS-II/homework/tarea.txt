@@ -1,0 +1,49 @@
+for:
+es una de las formas que tenemos para ejecutar un bucle, funciona evaluando expresiones hasta que se cumple una condicion para que se detenga.
+la construccion de for esta dada de la siguiente forma:
+primero la palabra for seguido de () dentro de los parentesis van 3 argumentos separados por (;), el primero es la declaracion de una variable, el segundo es
+una expresion condicional que se evaluara para determinar si se sigue ejecutando el bucle o se termina, y el tercer argumento es el incremento
+de la variable que declaramos, por ultimo, seguido de los parentesis vienen las llaves {}, dentro de ellas se escribe el codigo que se ejecuta
+en cada iteracion del bucle.
+
+ejemplo:
+
+for (let i = 0; i < 5 ; i++){
+  console.log(i);
+}
+
+>> let i = 0; es el primer argumento, declaramos la variable i y le asignamos el valor 0.
+>> i < 5; es el segundo argumento, este es una expresion condicional que se evaluara en cada ciclo y mientras sea true se va a ejecutar el bucle, de lo contrario finalizara.
+>> i++ es el tercer argumento, este incrementa el valor de la variable declarada en el primer argumento cada vez que inicia un nuevo ciclo.
+
+>> console.log(i); es lo que esta dentro de las {}, esto se ejecutara 5 veces hasta que finalice el bucle.
+
+-------------------------------------------
+
+operadores logicos &&, ||, ! :
+se utilizan para combinar expresiones normalmente con valores booleanos.
+
+operador AND ( && ): este operador requiere que ambas expresiones sean true para ser true, de lo contrario sera false.
+ejemplo:
+
+if( expresion1 && expresion2 ){
+  si expresion1 y expresion2 son true se ejecuta este codigo.
+} else {
+  si alguna de las 2 expresiones o las 2 son false se ejecuta este codigo
+}
+
+
+operador OR ( || ): este operador requiere que solo una de las dos expresiones sean true para ser true, solo si ambas son false sera false.
+ejemplo:
+
+if( expresion1 || expresion2 ){
+  si expresion1 ó expresion2 ó ambas son true se ejecuta este codigo.
+} else {
+  si las 2 expresiones son false se ejecuta este codigo
+}
+
+
+operador NOT ( ! ): este operador lo que hace es devolver el valor booleano contrario, si es true devolvera false y viceversa.
+ejemplo:
+
+expresion1 = true; // !expresion1 sera false

@@ -1,0 +1,88 @@
+Variables:
+una variable es una forma de representar un valor que varia almacenado en ella.
+se puede declarar con las palabras <<var>> y <<let>> seguidas por el nombre que se va a usar para dentificarlas.
+por ejemplo:
+
+var miVariable;
+let miVariable2;
+
+si se quiere almacenar un dato en ellas se hace de la siguiente forma:
+
+miVariable = 'mi dato';
+miVariable2 = 23434;
+
+y para acceder al valor guardado en ellas solo es necesario llamarlas por su nombre.
+
+existen tambien variables que las guardamos como constantes porque no cambiaran su valor en el ciclo de vida del programa,
+estas se declaran con la palabra <<const>> y se accede a su valor de igual forma que las variables comunes.
+
+const Pi = 3.141592;
+
+las variables pueden almacenar diversos tipos de datos como los numbers, strings, arrays, booleans, objects... tambien functions.
+
+-------------------------------------
+
+Strings:
+son cadenas de caracteres o bloques de texto, estos se escriben entre comillas simples '' o comillas dobles "".
+por ejemplo:
+
+var str = 'Hola, soy Leo!'
+
+-------------------------------------
+
+Funciones
+son bloques de codigo que realizan alguna funcion, se les puede pasar argumentos para ser procesados/transformados y
+esperar que retorne algo o no.
+se pueden construir de tres formas:
+
+1. function miFuncion() {}
+2. var miFuncionDos = function() {};
+3. var miFuncionTres = () => {};
+
+una vez construida una funcion, se pueden usar invocandolas por su nombre y pasandoles los argumentos que necesitan:
+
+ejemplo de creacion de funcion:
+
+
+function dividirGastos(cuenta, cantPersonas){
+  return cuenta/cantPersonas;
+}
+
+ejemplo de invocar funcion y guardar lo que devuelve en una variable:
+
+var cuantoPago;
+
+cuantoPago = dividirGastos(100, 4);  //esto devolveria 100/4 que es igual a 25
+
+----------------------------------------
+
+Argumentos:
+
+son datos/valores o variables que se les pasa a las funciones para que los procecen.
+
+----------------------------------------
+
+return:
+
+return es una palabra clave que se usa dentro de las funciones para poder sacar informacion/datos/variables de ellas.
+
+-----------------------------------------
+
+Declaraciones if:
+
+las declaraciones if son funciones condicionales, es decir, se les pasa una exprecion o condicion que si se cumple o es true
+ejecuta un bloque de codigo y si no se cumple no hace nada o ejecuta otro bloque de codigo si se usa la palabra <<else>>.
+
+ejemplo:
+
+if (edad > 18){
+  // si se cumple que la edad es mayor a 18 ejecuta el codigo que escriba en esta seccion
+} else {
+  // si no se cumple que la edad es mayor a 18 entonces se ejecuta lo que se escriba en esta seccion
+}
+
+-------------------------------------------
+
+Valores booleanos (true, false):
+
+los valores booleanos son un tipo de dato binario, es decir solo hay 2 valores, 0 y 1 ó false y true respectivamente.

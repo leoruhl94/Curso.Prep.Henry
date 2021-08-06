@@ -1,0 +1,4 @@
+Funciones Callback:
+las funciones callback son funciones que se pasan como argumentos de otra funcion, de esta forma
+la funcion contenedora decide cuando ejecutar la funcion cb que se paso como argumento.
+tambien los callback se usan para para avisar cuando una funcion termina de hacer algo.
